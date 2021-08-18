@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https:/api-free-reunioes.herokuapp.com/'
+  baseUrl: 'https:/api-free-reunioes.herokuapp.com'
 };
 
 /*
