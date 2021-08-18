@@ -1,3 +1,6 @@
+import { Reuniao } from './../reuniao.model';
+import { ReuniaoService } from './../reuniao.service';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReunioesCreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: ReuniaoService, private router: Router) { }
+  reuniao: Reuniao = {
+    nome: '',
+    data: '',
+	  horaInicio: '',
+    horaTermino: '',
+  }
 
   ngOnInit(): void {
+  }
+
+  voltar(): void {
+    this.router.navigate(['/reunioes-list'])
+  }
+
+  salvar(): void {
+    this.service.salvar(this.reuniao).subscribe((resposta) => {
+      this.router.navigate(['/reunioes-list'])
+    })
   }
 
 }

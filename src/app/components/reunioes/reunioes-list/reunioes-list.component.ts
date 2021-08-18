@@ -1,3 +1,6 @@
+import { Reuniao } from './../reuniao.model';
+import { Router } from '@angular/router';
+import { ReuniaoService } from './../reuniao.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reunioes-list.component.css']
 })
 export class ReunioesListComponent implements OnInit {
+ 
 
-  constructor() { }
+  constructor(private service: ReuniaoService) { }
 
   ngOnInit(): void {
   }
