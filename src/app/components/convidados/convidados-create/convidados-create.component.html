@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <h2>Novo Convidado</h2>
+
+<form class="row form-floating">
+
+        <div class="col-md-6">
+            <label for="nome">Nome Completo*</label>
+            <input [(ngModel)]="convidado.nomeCompleto" type="text" class="form-control" name="nomeCompleto" id="nomeCompleto" placeholder="EX: Maria da Silva Santos">        
+        </div>
+
+        <div class="col-md-6">
+            <label for="data">Telefone*</label>
+            <input [(ngModel)]="convidado.telefone"  type="text" class="form-control" name="telefone" id="telefone" placeholder="EX: (71)99999-8888">   
+        </div>
+
+</form>
+
+<div class="buttons mt-4">
+    <button (click)="salvar()" class="btn btn-success">Gravar</button>
+    <button (click)="voltar()" class="btn btn-warning">Voltar</button>
+</div>
+</div>

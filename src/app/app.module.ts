@@ -13,6 +13,7 @@ import { ReunioesCreateComponent } from './components/reunioes/reunioes-create/r
 import { ReunioesDetailsComponent } from './components/reunioes/reunioes-details/reunioes-details.component';
 import { ReunioesDeleteComponent } from './components/reunioes/reunioes-delete/reunioes-delete.component';
 import { ReunioesEditComponent } from './components/reunioes/reunioes-edit/reunioes-edit.component';
+import { ConvidadosCreateComponent } from './components/convidados/convidados-create/convidados-create.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ReunioesEditComponent } from './components/reunioes/reunioes-edit/reuni
     ReunioesCreateComponent,
     ReunioesDetailsComponent,
     ReunioesDeleteComponent,
-    ReunioesEditComponent
+    ReunioesEditComponent,
+    ConvidadosCreateComponent
   ],
   imports: [
     BrowserModule,

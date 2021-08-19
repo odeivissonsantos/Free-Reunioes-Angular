@@ -1,3 +1,4 @@
+import { ConvidadosCreateComponent } from './components/convidados/convidados-create/convidados-create.component';
 import { ReunioesEditComponent } from './components/reunioes/reunioes-edit/reunioes-edit.component';
 import { ReunioesDeleteComponent } from './components/reunioes/reunioes-delete/reunioes-delete.component';
 import { ReunioesDetailsComponent } from './components/reunioes/reunioes-details/reunioes-details.component';
@@ -27,11 +28,14 @@ const routes: Routes = [
   {
     path: 'reunioes-delete/:id',
     component: ReunioesDeleteComponent
-  }
-  ,
+  },
   {
     path: 'reunioes-edit/:id',
     component: ReunioesEditComponent
+  },
+  {
+    path: 'convidados-create',
+    component: ConvidadosCreateComponent
   }
 
 ];
