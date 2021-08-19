@@ -19,7 +19,7 @@ const routes: Routes = [
     component: ReunioesCreateComponent
   },
   {
-    path: 'reunioes-details',
+    path: 'reunioes-details/:id',
     component: ReunioesDetailsComponent
   }
 

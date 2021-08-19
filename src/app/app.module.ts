@@ -11,6 +11,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ReunioesListComponent } from './components/reunioes/reunioes-list/reunioes-list.component';
 import { ReunioesCreateComponent } from './components/reunioes/reunioes-create/reunioes-create.component';
 import { ReunioesDetailsComponent } from './components/reunioes/reunioes-details/reunioes-details.component';
+import { ReunioesDeleteComponent } from './components/reunioes/reunioes-delete/reunioes-delete.component';
+import { ReunioesEditComponent } from './components/reunioes/reunioes-edit/reunioes-edit.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ReunioesDetailsComponent } from './components/reunioes/reunioes-details
     HomeComponent,
     ReunioesListComponent,
     ReunioesCreateComponent,
-    ReunioesDetailsComponent
+    ReunioesDetailsComponent,
+    ReunioesDeleteComponent,
+    ReunioesEditComponent
   ],
   imports: [
     BrowserModule,

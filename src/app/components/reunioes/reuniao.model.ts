@@ -1,5 +1,5 @@
 export interface Reuniao {
-    id?: number,
+    id?: string,
     nome: string,
     data: string,
     horaInicio: string,

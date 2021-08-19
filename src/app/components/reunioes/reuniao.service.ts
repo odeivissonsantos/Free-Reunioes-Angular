@@ -33,7 +33,7 @@ export class ReuniaoService {
   }
 
   atualizar(reuniao: Reuniao): Observable<void> {
-    const url = `${this.baseUrl}/api/servicos-prestados/${reuniao.id}`
+    const url = `${this.baseUrl}/api/salas/${reuniao.id}`
     return this.http.put<void>(url, reuniao)
   }
 
