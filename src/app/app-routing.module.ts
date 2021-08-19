@@ -1,3 +1,5 @@
+import { ReunioesEditComponent } from './components/reunioes/reunioes-edit/reunioes-edit.component';
+import { ReunioesDeleteComponent } from './components/reunioes/reunioes-delete/reunioes-delete.component';
 import { ReunioesDetailsComponent } from './components/reunioes/reunioes-details/reunioes-details.component';
 import { ReunioesCreateComponent } from './components/reunioes/reunioes-create/reunioes-create.component';
 import { ReunioesListComponent } from './components/reunioes/reunioes-list/reunioes-list.component';
@@ -21,6 +23,15 @@ const routes: Routes = [
   {
     path: 'reunioes-details/:id',
     component: ReunioesDetailsComponent
+  },
+  {
+    path: 'reunioes-delete/:id',
+    component: ReunioesDeleteComponent
+  }
+  ,
+  {
+    path: 'reunioes-edit/:id',
+    component: ReunioesEditComponent
   }
 
 ];
