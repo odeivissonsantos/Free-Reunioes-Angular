@@ -22,6 +22,21 @@ export class ReuniaoService {
     return this.http.get<Reuniao[]>(url);
   }
 
+  buscarPorId(id: String): Observable<Reuniao> {
+    const url = `${this.baseUrl}/api/salas/${id}`
+    return this.http.get<Reuniao>(url)
+  }
+
+  deletar(id: String): Observable<void> {
+    const url = `${this.baseUrl}/api/salas/${id}`
+    return this.http.delete<void>(url)
+  }
+
+  atualizar(reuniao: Reuniao): Observable<void> {
+    const url = `${this.baseUrl}/api/servicos-prestados/${reuniao.id}`
+    return this.http.put<void>(url, reuniao)
+  }
+
 
 
 
