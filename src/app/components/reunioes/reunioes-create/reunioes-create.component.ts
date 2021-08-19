@@ -27,6 +27,7 @@ export class ReunioesCreateComponent implements OnInit {
 
   salvar(): void {
     this.service.salvar(this.reuniao).subscribe((resposta) => {
+      console.log(resposta);
       this.router.navigate(['/reunioes-list'])
     })
   }

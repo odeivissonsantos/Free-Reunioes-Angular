@@ -9,11 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reunioes-list.component.css']
 })
 export class ReunioesListComponent implements OnInit {
- 
+ reuniao: Reuniao[] = []
 
-  constructor(private service: ReuniaoService) { }
+  constructor(private service: ReuniaoService, private router: Router) { }
 
   ngOnInit(): void {
+    this.listarTodos();
+  }
+
+  listarTodos(): void {
+    this.service.listarTodos().subscribe(resposta => {
+      this.reuniao = resposta;
+    })
   }
 
 }

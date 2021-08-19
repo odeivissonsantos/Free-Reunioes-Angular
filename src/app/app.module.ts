@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,6 +24,7 @@ import { ReunioesDetailsComponent } from './components/reunioes/reunioes-details
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule
   ],

@@ -5,22 +5,22 @@
 
             <div class="col-md-6">
                 <label for="nome">Nome da Reunião*</label>
-                <input ([ngModel])="reuniao.nome" type="text" class="form-control" name="nome" id="nome" placeholder="Ex: Reunião Gerencial">        
+                <input [(ngModel)]="reuniao.nome" type="text" class="form-control" name="nome" id="nome" placeholder="Ex: Reunião Gerencial">        
             </div>
 
             <div class="col-md-6">
                 <label for="data">Data da Reunião*</label>
-                <input ([ngModel])="reuniao.data" type="date" class="form-control" name="data" id="data" >   
+                <input [(ngModel)]="reuniao.data" type="date" class="form-control" name="data" id="data" >   
             </div>
 
             <div class="col-md-6 mt-3">
                 <label for="inicio">Hora de Início*</label>
-                <input ([ngModel])="reuniao.horaInicio" type="text" class="form-control" name="horaInicio" id="inicio" placeholder="Ex: 22:00">
+                <input [(ngModel)]="reuniao.horaInicio" type="text" class="form-control" name="horaInicio" id="inicio" placeholder="Ex: 22:00">
             </div>
 
             <div class="col-md-6 mt-3">
                 <label for="termino">Hora do Término*</label>
-                <input ([ngModel])="reuniao.horaTermino" type="text" class="form-control" name="horaTermino" id="termino" placeholder="Ex: 23:00">
+                <input [(ngModel)]="reuniao.horaTermino" type="text" class="form-control" name="horaTermino" id="termino" placeholder="Ex: 23:00">
             </div>
     </form>
 

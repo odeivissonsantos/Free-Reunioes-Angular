@@ -17,6 +17,11 @@ export class ReuniaoService {
     return this.http.post<Reuniao>(url, reuniao);
   }
 
+  listarTodos(): Observable<Reuniao[]> {
+    const url = `${this.baseUrl}/api/salas`
+    return this.http.get<Reuniao[]>(url);
+  }
+
 
 
 

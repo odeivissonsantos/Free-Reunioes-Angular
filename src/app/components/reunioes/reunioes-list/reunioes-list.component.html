@@ -14,11 +14,11 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th>1</th>
+        <tr *ngFor="let reuniao of reuniao">
+            <th>{{ reuniao.id }}</th>
             <td>
                 <a routerLink="/reunioes-details">
-                Mark
+                {{ reuniao.nome }}
                 </a>
             </td>
             <td>
